@@ -75,6 +75,7 @@ function App() {
                   <li>Power BI</li>
                   <li>Excel</li>
                   <li>Project Jupyter</li>
+                  <li>Tableau</li>
                 </ul>
               </div>
               <div className="skill-category">
