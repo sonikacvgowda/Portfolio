@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import profilePic from './assests/profile pic.jpg';
 
+
+
 function App() {
   const [activeSection, setActiveSection] = useState(null);
 
@@ -237,27 +239,34 @@ function App() {
         </section>
 
         <section className={`section ${activeSection === 'certifications' ? 'active' : ''}`}>
-          <h2 onClick={() => toggleSection('certifications')}>
-            <i className="fas fa-certificate"></i> Training and Certifications
-            <i className={`fas fa-chevron-${activeSection === 'certifications' ? 'up' : 'down'}`}></i>
-          </h2>
-          <div className="section-content">
-            <div className="certifications-list">
-              <div className="certification-item">
-                <i className="fas fa-award"></i>
-                <span>Data Analytics - Seventh Sense Talent Solution</span>
-              </div>
-              <div className="certification-item">
-                <i className="fas fa-award"></i>
-                <span>Machine Learning in Python - AiRobosoft Service and Product</span>
-              </div>
-              <div className="certification-item">
-                <i className="fas fa-award"></i>
-                <span>Python - Besant Technology</span>
-              </div>
-            </div>
-          </div>
-        </section>
+  <h2 onClick={() => toggleSection('certifications')}>
+    <i className="fas fa-certificate"></i> Training and Certifications
+    <i className={`fas fa-chevron-${activeSection === 'certifications' ? 'up' : 'down'}`}></i>
+  </h2>
+  <div className="section-content">
+    <div className="certifications-list">
+      <div className="certification-item">
+        <i className="fas fa-award"></i>
+        <span>
+          Deloitte Australia Data Analytics Job Simulation on Forage
+        </span>
+      </div>
+      <div className="certification-item">
+        <i className="fas fa-award"></i>
+        <span>Data Analytics - Seventh Sense Talent Solution</span>
+      </div>
+      <div className="certification-item">
+        <i className="fas fa-award"></i>
+        <span>Machine Learning in Python - AiRobosoft Service and Product</span>
+      </div>
+      <div className="certification-item">
+        <i className="fas fa-award"></i>
+        <span>Python - Besant Technology</span>
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
 
       <footer className="footer">
